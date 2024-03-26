@@ -80,11 +80,11 @@ If physics layer is PCIe, NUPA-NET is also known as **IP over PCIe**.
 
 If physics layer is CXL, NUPA-NET is also known as **IP over CXL**.
 
-More details please refer to [NUPA-NET](./NUPA-NET-VM.md)
+More details please refer to[IP over PCIe](ip/pcie/README.md) or [IP over CXL](ip/cxl/README.md)
 ## NUPA-RDMA
 NUPA-RDMA is the RDMA device driver specified for Clussys ASIC to privide standard RDMA interface, users could use standard RDMA libraries to access the RDMA interface.
 
-More details please refer to [NUPA-RDMA](./NUPA-RDMA.md)
+More details please refer to [RDMA over PCIe](rdma/pcie/README.md.md) or [RDMA over CXL](rdma/cxl/README.md)
 
 
 ## How to setup and run
