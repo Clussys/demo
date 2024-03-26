@@ -31,13 +31,20 @@ cp node1.qcow2 node2.qcow2
 
  # 3. Run qemu
  ```
- ./launch.sh
+./node1.sh
+# node1 log in, username is fedora, password is password
+# if NIC is not set, try set as such that you can log in using ssh , enpXsY is your NIC name, please modify accordingly
+ifconfig enpXsY 10.0.2.25
+ifconfig enpXsY up
 
- # node1 log in, password is password
- ssh fedora@127.0.0.1 -p 2223
+ssh fedora@127.0.0.1 -p 2223
 
-  # node2 log in, password is password
- ssh fedora@127.0.0.1 -p 2224
+./node2.sh
+# node2 log in, username is fedora, password is password
+# if NIC is not set, try set as such that you can log in using ssh , enpXsY is your NIC name, please modify accordingly
+ifconfig enpXsY 10.0.2.25
+ifconfig enpXsY up
+ssh fedora@127.0.0.1 -p 2224
 
  ```
 
