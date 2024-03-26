@@ -9,7 +9,7 @@ As Clussys, unlike traditional Ethernet network infrastructures, we will complet
 
 In small-scale clusters, such as the Nvidia-defined superpod clusters, we are particularly concerned with high-speed, low-latency communication between devices. Just like traditional networks, the key elements for improving communication performance include hardware control as much as possible, streamlined data flow (zero copy), and excellent flow control. To simplify the model, we compare network protocols and aim to achieve data transmission by leveraging existing hardware features as much as possible.
 
-![protocols](protocols.png)
+![protocols](imgs/protocols.png)
 
 In the figure above, we can see that traditional network card devices introduce approximately 1-3us of additional latency. Additionally, data needs to be constantly copied between user space, kernel space, and devices. While various optimization techniques and technology modules can simplify this data movement, the results are not yet satisfactory, and we need something better.
 
@@ -80,11 +80,11 @@ If physics layer is PCIe, NUPA-NET is also known as **IP over PCIe**.
 
 If physics layer is CXL, NUPA-NET is also known as **IP over CXL**.
 
-More details please refer to [NUPA-NET](./NUPA-NET-VM.md)
+More details please refer to[IP over PCIe](ip/pcie/README.md) or [IP over CXL](ip/cxl/README.md)
 ## NUPA-RDMA
 NUPA-RDMA is the RDMA device driver specified for Clussys ASIC to privide standard RDMA interface, users could use standard RDMA libraries to access the RDMA interface.
 
-More details please refer to [NUPA-RDMA](./NUPA-RDMA.md)
+More details please refer to [RDMA over PCIe](rdma/pcie/README.md.md) or [RDMA over CXL](rdma/cxl/README.md)
 
 
 ## How to setup and run
