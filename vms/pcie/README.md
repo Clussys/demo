@@ -31,14 +31,20 @@ cp node1.qcow2 node2.qcow2
 
  # 3. Run qemu
  ```
- ./launch.sh
+./node1.sh
+# node1 log in, username is root, password is ubuntu
+# if NIC is not set, try set as such that you can log in using ssh , enpXsY is your NIC name, please modify accordingly
+ifconfig enpXsY 10.0.2.25
+ifconfig enpXsY up
 
- # node1 log in, password is ubuntu
- ssh root@127.0.0.1 -p 2221
+ssh root@127.0.0.1 -p 2221
 
-  # node2 log in, password is ubuntu
- ssh root@127.0.0.1 -p 2222
-
+./node2.sh
+# node2 log in, username is root, password is ubuntu
+# if NIC is not set, try set as such that you can log in using ssh , enpXsY is your NIC name, please modify accordingly
+ifconfig enpXsY 10.0.2.25
+ifconfig enpXsY up
+ssh root@127.0.0.1 -p 2222
  ```
 
 # 4. IP or RDMA Test
