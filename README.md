@@ -9,7 +9,7 @@ As Clussys, unlike traditional Ethernet network infrastructures, we will complet
 
 In small-scale clusters, such as the Nvidia-defined superpod clusters, we are particularly concerned with high-speed, low-latency communication between devices. Just like traditional networks, the key elements for improving communication performance include hardware control as much as possible, streamlined data flow (zero copy), and excellent flow control. To simplify the model, we compare network protocols and aim to achieve data transmission by leveraging existing hardware features as much as possible.
 
-![protocols](protocols.png)
+![protocols](imgs/protocols.png)
 
 In the figure above, we can see that traditional network card devices introduce approximately 1-3us of additional latency. Additionally, data needs to be constantly copied between user space, kernel space, and devices. While various optimization techniques and technology modules can simplify this data movement, the results are not yet satisfactory, and we need something better.
 
