@@ -21,7 +21,7 @@ sudo make install
 
 # 2. Get qcow2 Image
 
-For CXL showcase, we use a fedora image based on linux-6.x.x, download its qcow2 img using :
+For PCIe showcase, we use a ubuntu server image based on linux-5.15.x, download its qcow2 img using :
 
 ```
 wget XXXX
@@ -33,21 +33,21 @@ cp node1.qcow2 node2.qcow2
  ```
  ./launch.sh
 
- # node1 log in, password is password
- ssh fedora@127.0.0.1 -p 2223
+ # node1 log in, password is ubuntu
+ ssh root@127.0.0.1 -p 2221
 
-  # node2 log in, password is password
- ssh fedora@127.0.0.1 -p 2224
+  # node2 log in, password is ubuntu
+ ssh root@127.0.0.1 -p 2222
 
  ```
 
 # 4. IP or RDMA Test
 Now we can run **IP** or **RDMA** Test.
 
-(1) [IP over CXL](../../ip/cxl/6.x.x/README.md)
+(1) [IP over PCIe](../../ip/pcie/README.md)
 
 
-(2) [RDMA over CXL](../../rdma/cxl/6.x.x/README.md)
+(2) [RDMA over PCIe](../../rdma/pcie/README.md)
 
 
 Go to corresponding directory, and do the test accoding to the README.md inside. 
