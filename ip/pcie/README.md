@@ -1,6 +1,7 @@
 # IP over PCIe
+## 0. Prerequisite
 
-
+Before you dive into this doc, please make sure virtual environment has already been setup according to  [VMS-PCIe](../../vms/pcie/README.md)
 ## 1. Install Driver
 
 On **node1**
