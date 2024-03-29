@@ -24,9 +24,9 @@ sudo make install
 For PCIe showcase, we use a ubuntu server image based on linux-5.15.x, download its qcow2 img using :
 
 ```
-wget XXXX
-cp XXXX node0.img
-cp node0.img node1.img
+wget http://43.133.203.111/pcie.qcow2
+cp pcie.qcow2 pcie_node1.qcow2
+cp pcie_node1.qcow2 pcie_node2.qcow2
 ```
 
  # 3. Run qemu
